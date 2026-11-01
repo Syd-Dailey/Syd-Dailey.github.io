@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color:darkslateblue;
+    background-color: darkslateblue;
     font-family: 'Times New Roman', Times, serif
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(44, 232, 232);
+    background-color: whitesmoke;
     width: 100%;
     justify-content: center;
 }
@@ -36,39 +36,54 @@ header h1{
     display: block;
     padding: 12px 12px ;
     text-align: center;
-    color: black;
+    color: gray;
     transition: color 0.3s ease;
+    transition: font-weight 0.5 ease-in;
     text-decoration: none;
 }
 
 .navigationBar a:hover{
-    color: white;
+    color: darkslateblue;
+    font-weight: bolder;
 }
 
 #aboutMe{
-    background-image: linear-gradient(to bottom, rgb(44, 232, 232), darkslateblue);
+    background-image: linear-gradient(to bottom, whitesmoke, darkslateblue);
     padding: 30px;
-    height: 600px;
+    height: 450px;
+    color: black;
+    height:auto;
+    align-items: center;
 }
 
 #aboutMe h1{
-  margin-bottom: 10px;
-  margin-top: 30px;;
-  font-size: 50px;
-  font-style: normal;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  font-size: 60px;
   font-weight: 200;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  justify-content: center;
+  border: 3px black hidden;
+  text-align: center;
+}
+
+#aboutMe p{
+    color: black;
+    border: 3px black double;
+    padding: 30px;
+
 }
 
 .listGrid h1{
     text-align: center;
-    color: darkcyan;
+    color: whitesmoke;
     margin: 30px;
+    font-weight: 400;
 }
 
 .listGrid ul{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     list-style-type: none;
     align-items: center;
     margin-left: 50px;
@@ -77,11 +92,15 @@ header h1{
 
 .listGrid li{
     display: block;
-    background-color: rgb(156, 224, 224);
+    background-color: rgba(167, 160, 217, 0.41);
     text-align: center;
-    border-radius: 10px;
-    height: 100px;
+    border-radius: 4pc;
+    padding-top: 3px;
+    justify-content: center;
+    height: 25px;
     margin: 10px;
+    color: black;
+    border: 1px whitesmoke solid;
 }
 
 
