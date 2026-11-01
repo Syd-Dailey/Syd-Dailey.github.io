@@ -53,7 +53,7 @@ header h1{
     font-weight: bolder;
 }
 
-#aboutMe{
+#hook{
     background-image: url('assets/travelingTurtle2.png'), linear-gradient(rgb(193 183 245 / 1), rgba(57 44 99 / 2)); 
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ header h1{
     color: whitesmoke;
 }
 
-#aboutMe h1{
+#hook h1{
   margin-bottom: 150px;
   margin-top: 300px;
   font-size: 60px;
@@ -73,7 +73,7 @@ header h1{
   text-align: center;
 }
 
-#abm{
+#aboutMe{
     color: gainsboro;
     padding: 30px;
     text-align: center;
