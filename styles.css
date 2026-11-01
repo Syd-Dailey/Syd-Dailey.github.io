@@ -1,17 +1,23 @@
+:root{
+    --primary-bg-color: rgb(57, 44, 99);
+    --secondy-color: rgb(193, 183, 173);
+}
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+
 body{
-    background-color: darkslateblue;
-    font-family: 'Times New Roman', Times, serif
+    background-color: var(--primary-bg-color);
+    font-family: 'Times New Roman', Times, seri
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color:rgb(193, 183, 173);
     width: 100%;
     justify-content: center;
 }
@@ -36,7 +42,7 @@ header h1{
     display: block;
     padding: 12px 12px ;
     text-align: center;
-    color: gray;
+    color: rgb(102, 102, 102);
     transition: color 0.3s ease;
     transition: font-weight 0.5 ease-in;
     text-decoration: none;
@@ -48,17 +54,17 @@ header h1{
 }
 
 #aboutMe{
-    background-image: linear-gradient(to bottom, whitesmoke, darkslateblue);
-    padding: 30px;
-    height: 450px;
-    color: black;
-    height:auto;
-    align-items: center;
+    background-image: url('assets/travelingTurtle2.png'), linear-gradient(rgb(193 183 245 / 1), rgba(57 44 99 / 2)); 
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    color: whitesmoke;
 }
 
 #aboutMe h1{
-  margin-bottom: 50px;
-  margin-top: 200px;
+  margin-bottom: 150px;
+  margin-top: 300px;
   font-size: 60px;
   font-weight: 200;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -67,16 +73,19 @@ header h1{
   text-align: center;
 }
 
-#aboutMe p{
-    color: black;
-    border: 3px black double;
+#abm{
+    color: gainsboro;
     padding: 30px;
+    text-align: center;
+    border: 1px var(--secondy-color) double;
+    margin: 30px;
 
 }
 
 .listGrid h1{
     text-align: center;
-    color: whitesmoke;
+    color: var(--secondy-color);
+    padding-top: 70px;
     margin: 30px;
     font-weight: 400;
 }
@@ -92,18 +101,38 @@ header h1{
 
 .listGrid li{
     display: block;
-    background-color: rgba(167, 160, 217, 0.41);
+    background-color: rgb(117, 105, 156);
     text-align: center;
     border-radius: 4pc;
     padding-top: 3px;
     justify-content: center;
     height: 25px;
     margin: 10px;
-    color: black;
-    border: 1px whitesmoke solid;
+    color: var(--primary-bg-color);
 }
 
+#projectTimeline h1{
+    color: var(--secondy-color);
+    padding-top: 15%;
+    text-align: center;
+}
 
+#projectTimeline h3{
+    color: var(--secondy-color);
+    margin: 30px;
+}
+
+#projectTimeline ul{
+    list-style-type: none;
+}
+
+#projectTimeline li{
+    color: rgb(168, 168, 168);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    border-left: 2px var(--secondy-color) solid;
+}
 
 
 
