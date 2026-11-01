@@ -4,62 +4,60 @@
     box-sizing: border-box;
 }
 body{
-    background-color: lightcyan;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkslateblue;
+    font-family: 'Times New Roman', Times, serif
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    background-color: darkturquoise;
-    padding-left: 5px ;
+    background-color: rgb(44, 232, 232);
     width: 100%;
+    justify-content: center;
 }
 
 header h1{
     padding-top: 5px;
-    font-size: xx-large;
+    font-size: medium;
     font-style: normal;
     font-weight: 900;
 }
 
 .navigationBar{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 80%;
 }
 
 .navigationBar a{
     display: block;
-    padding: 20px 12px ;
+    padding: 12px 12px ;
     text-align: center;
     color: black;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
     text-decoration: none;
 }
 
 .navigationBar a:hover{
-    background-color: lightcyan;
-    color: darkcyan;
+    color: white;
 }
 
 #aboutMe{
-    background-image: linear-gradient(to bottom, rgb(44, 232, 232), lightcyan);
+    background-image: linear-gradient(to bottom, rgb(44, 232, 232), darkslateblue);
     padding: 30px;
-    border-radius: 10px;
-    margin: 10px;
     height: 600px;
 }
 
 #aboutMe h1{
   margin-bottom: 10px;
-  margin-top: 300px;;
+  margin-top: 30px;;
   font-size: 50px;
   font-style: normal;
   font-weight: 200;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .listGrid h1{
@@ -73,8 +71,8 @@ header h1{
     grid-template-columns: auto auto;
     list-style-type: none;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .listGrid li{
@@ -82,7 +80,7 @@ header h1{
     background-color: rgb(156, 224, 224);
     text-align: center;
     border-radius: 10px;
-    height: 200px;
+    height: 100px;
     margin: 10px;
 }
 
