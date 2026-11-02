@@ -134,9 +134,49 @@ header h1{
     border-left: 2px var(--secondy-color) solid;
 }
 
+#projectGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
 
+#projectGrid li{
+    display: block;
+    background-color: var(--secondy-color);
+    margin: 10px;
+    padding: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    text-wrap-mode: wrap;
+    transition: background-color 0.4s;
+    block-size: 100px;
+    height: 70%;
+}
 
+#projectGrid :hover{
+    background-color: orange;
+    color: whitesmoke;
+    font-weight: bolder;
+}
 
+#pHead{
+    color: var(--secondy-color);
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-display: fallback;
+}
+
+#pIntro{
+    color: var(--secondy-color);
+    border: 1px var(--secondy-color) double;
+    margin: 10px;
+    padding: 5px;
+}
 
 
 
