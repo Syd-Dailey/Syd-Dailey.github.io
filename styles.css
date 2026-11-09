@@ -1,188 +1,49 @@
 :root{
-    --primary-bg-color: rgb(57, 44, 99);
-    --secondy-color: rgb(193, 183, 173);
+    --primaryBg: #4A0E5C;
+    --secondaryBg: #7C4789;
+    --primaryContainer: #BCA3CA;
+    --secondaryColor: #CCF0C3;
+    --tetraryColoR: #1E3B2F;
+    --lightFont: whitesmoke;
+    --darkFont: black;
+    --tan: #FFECCB;
+
 }
 
 *{
-    margin: 0%;
+    margin: 1%;
     padding: 0%;
     box-sizing: border-box;
 }
 
 body{
-    background-color: var(--primary-bg-color);
-    font-family: 'Times New Roman', Times, seri
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--tan);
 }
 
 header{
+    border: var(--secondaryColor) 3px solid;
     display: flex;
-    justify-content: space-between;
-    background-color:rgb(193, 183, 173);
-    width: 100%;
-    justify-content: center;
+    gap: 40px;
 }
 
-header h1{
-    padding-top: 5px;
-    font-size: medium;
-    font-style: normal;
-    font-weight: 900;
-}
-
-.navigationBar{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+.navigation-bar{
+    display: flex;
+    gap: 40px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 80%;
+    width: min(1000px, 100%);
 }
-
-.navigationBar a{
-    display: block;
-    padding: 12px 12px ;
-    text-align: center;
-    color: rgb(102, 102, 102);
-    transition: color 0.3s ease;
-    transition: font-weight 0.5 ease-in;
+.navigation-bar a{
     text-decoration: none;
+    color: var(--tetraryColoR);
+    transition: color 0.3s;
 }
 
-.navigationBar a:hover{
-    color: darkslateblue;
-    font-weight: bolder;
+.navigation-bar a:hover{
+    color: var(--secondaryBg);
+    font-weight: bold;
 }
 
-#hook{
-    background-image: url('assets/travelingTurtle2.png'), linear-gradient(rgb(193 183 245 / 1), rgba(57 44 99 / 2)); 
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    color: whitesmoke;
+.navigation-bar li:first-child{
+    margin-right: auto;
 }
-
-#hook h1{
-  margin-bottom: 150px;
-  margin-top: 300px;
-  font-size: 60px;
-  font-weight: 200;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  justify-content: center;
-  border: 3px black hidden;
-  text-align: center;
-}
-
-#aboutMe{
-    color: gainsboro;
-    padding: 30px;
-    text-align: center;
-    border: 1px var(--secondy-color) double;
-    margin: 30px;
-
-}
-
-.listGrid h1{
-    text-align: center;
-    color: var(--secondy-color);
-    padding-top: 70px;
-    margin: 30px;
-    font-weight: 400;
-}
-
-.listGrid ul{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    list-style-type: none;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.listGrid li{
-    display: block;
-    background-color: rgb(117, 105, 156);
-    text-align: center;
-    border-radius: 4pc;
-    padding-top: 3px;
-    justify-content: center;
-    height: 25px;
-    margin: 10px;
-    color: var(--primary-bg-color);
-}
-
-#projectTimeline h1{
-    color: var(--secondy-color);
-    padding-top: 15%;
-    text-align: center;
-}
-
-#projectTimeline h3{
-    color: var(--secondy-color);
-    margin: 30px;
-}
-
-#projectTimeline ul{
-    list-style-type: none;
-}
-
-#projectTimeline li{
-    color: rgb(168, 168, 168);
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 10px;
-    border-left: 2px var(--secondy-color) solid;
-}
-
-#projectGrid{
-    display: grid;
-    grid-template-columns: auto auto;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-}
-
-#projectGrid li{
-    display: block;
-    background-color: var(--secondy-color);
-    margin: 10px;
-    padding: 50px;
-    border-radius: 10px;
-    justify-content: center;
-    text-align: center;
-    font-size: large;
-    text-wrap-mode: wrap;
-    transition: background-color 0.4s;
-    block-size: 100px;
-    height: 70%;
-}
-
-#projectGrid :hover{
-    background-color: orange;
-    color: whitesmoke;
-    font-weight: bolder;
-}
-
-#pHead{
-    color: var(--secondy-color);
-    padding: 10px;
-    text-align: center;
-    font-weight: 900;
-    font-display: fallback;
-}
-
-#pIntro{
-    color: var(--secondy-color);
-    border: 1px var(--secondy-color) double;
-    margin: 10px;
-    padding: 5px;
-}
-
-
-
-
-
-
-
-
-
