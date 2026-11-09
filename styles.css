@@ -11,7 +11,7 @@
 }
 
 *{
-    margin: 1%;
+    margin: 5px;
     padding: 0%;
     box-sizing: border-box;
 }
@@ -21,29 +21,43 @@ body{
     background-color: var(--tan);
 }
 
+/*houses the naviagtion bar on each page*/
 header{
-    border: var(--secondaryColor) 3px solid;
+    border: var(--primaryBg) 2px solid;
+    border-radius: 1em;
+    background-color: var(--secondaryBg);
     display: flex;
-    gap: 40px;
 }
 
 .navigation-bar{
     display: flex;
-    gap: 40px;
+    gap: 50px;
     list-style-type: none;
     width: min(1000px, 100%);
+    color: var(--tan);
 }
 .navigation-bar a{
     text-decoration: none;
-    color: var(--tetraryColoR);
+    color: var(--tan);
     transition: color 0.3s;
+    transition: font-weight 0.3s;
 }
 
 .navigation-bar a:hover{
     color: var(--secondaryBg);
     font-weight: bold;
+    border: var(--primaryBg) 2px solid;
+    padding: 5px;
+    border-radius: 1em;
+    background-color: var(--tan);
 }
 
 .navigation-bar li:first-child{
     margin-right: auto;
+}
+
+/*Introduction bar on the main homepage*/
+#introduction{
+    background: linear-gradient(to bottom, transparent, var(--tan)), url("assets/travelingTurtle2.png");
+    padding-top: 80%;
 }
