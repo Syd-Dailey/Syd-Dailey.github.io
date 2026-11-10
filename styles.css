@@ -11,7 +11,7 @@
 }
 
 *{
-    margin: 5px;
+    margin: 2px;
     padding: 0%;
     box-sizing: border-box;
 }
@@ -56,8 +56,3 @@ header{
     margin-right: auto;
 }
 
-/*Introduction bar on the main homepage*/
-#introduction{
-    background: linear-gradient(to bottom, transparent, var(--tan)), url("assets/travelingTurtle2.png");
-    padding-top: 80%;
-}
