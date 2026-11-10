@@ -18,41 +18,23 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: var(--tan);
+    background-color: whitesmoke;
 }
 
 /*houses the naviagtion bar on each page*/
 header{
     border: var(--primaryBg) 2px solid;
-    border-radius: 1em;
-    background-color: var(--secondaryBg);
     display: flex;
+    justify-content: space-between;
 }
 
-.navigation-bar{
-    display: flex;
-    gap: 50px;
+.navigation-bar {
     list-style-type: none;
-    width: min(1000px, 100%);
-    color: var(--tan);
-}
-.navigation-bar a{
-    text-decoration: none;
-    color: var(--tan);
-    transition: color 0.3s;
-    transition: font-weight 0.3s;
+    display: flex;
 }
 
-.navigation-bar a:hover{
-    color: var(--secondaryBg);
-    font-weight: bold;
-    border: var(--primaryBg) 2px solid;
-    padding: 5px;
-    border-radius: 1em;
-    background-color: var(--tan);
+.navigation-bar li{
+    
 }
 
-.navigation-bar li:first-child{
-    margin-right: auto;
-}
 
